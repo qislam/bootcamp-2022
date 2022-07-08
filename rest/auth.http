@@ -1,0 +1,25 @@
+###
+
+GET https://qforcedx-dev-ed.my.salesforce.com/.well-known/openid-configuration HTTP/1.1
+Content-Type: application/json
+
+###
+
+POST https://qforcedx-dev-ed.my.salesforce.com/services/oauth2/token HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password
+&username={{username}}
+&password={{password}}{{security-token}}
+&client_id=3MVG9kBt168mda_8Uzm2adDOqWFYr0CK_mW1.rYaZJhMsnzFWuXFRtR60zmPAvEBot0260rdTb2M8MO.TZCfW
+&client_secret=D5837C192CFEC7BE69F14B6F434DED7DF976D9E4B5AE234038AFD880F1EA8A36
+
+###
+
+POST https://qforcedx-dev-ed.my.salesforce.com/services/oauth2/token HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer
+&assertion=eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiIzTVZHOWtCdDE2OG1kYV84VXptMmFkRE9xV0ZZcjBDS19tVzEucllhWkpoTXNuekZXdVhGUnRSNjB6bVBBdkVCb3QwMjYwcmRUYjJNOE1PLlRaQ2ZXIiwic3ViIjoicUBxZm9yY2VkeC5jb20uc2ZkY2hlbGxvd29ybGQiLCJhdWQiOiJodHRwczovL2xvZ2luLnNhbGVzZm9yY2UuY29tIiwiZXhwIjoiMTY1NzI5NDAxNzY0NyJ9.OVcRB4an_YrWJmCQdtRYZh5BGLGIwEKxFS036dfIuvv0WiZ30M7cqF0LpiyCN7GXugWVxqacaUBiJ8dfjzqzim2I7fRl75HskikL_TtcVW1eQjKoo976bS-LW0g76lOZkUFufOXiliA5s2i1xpkscNDq-f0jRoRWfwN86jCNZXSllLhoWQyaRJGKPY3V-skBCI9ExNR0HchueqqovnFll5ObxJ_fmokIGLx9PTzHC-qPvQxZ70ijTUu2IMhyHGW33NXB6xJrrXa_3Og_sGvOVE0YYALOZDOxcoIAyGN82evFJvrRVXl8Dee6krmm23XlitKvcXrpaoI52o0pbahHGQ
+
+###
